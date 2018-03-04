@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box1,
+    .box2,
+    .box3{
+        position: absolute;
+        left: 0;
+        width: 150px;
+        height: 100px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .box1 {
+        top: 20px;
+        background-color: #63B8FF;
+    }
+    .box2 {
+        top: 130px;
+        background-color: #CD3700;
+    }
+    .box3{
+        top: 240px;
+        background-color: #66CDAA;
+        transition: left cubic-bezier(0.83,-0.72, 0.38,1.65) 3000ms;
+    }
+    .box-wrapper {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 350px;
+        height: 340px;
+        border: 1px solid #dcdcdc;
+    }
+    .conter {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <div class="conter">
+        <div class="box-wrapper"></div>
+        <div id="box1" class="box1">使用tweet</div>
+        <div id="box2" class="box2">使用自定义贝塞尔曲线</div>
+        <div id="box3" class="box3">使用css3贝塞尔曲线</div>
+    </div>
+</body>
+
+</html>
