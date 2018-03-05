@@ -6,4 +6,8 @@
 
 > [运动缓动动画实现(帧数动画)](https://github.com/ljcGitHub/my-blog-issue/issues/2)
 
+> [gulp常见配置](https://github.com/ljcGitHub/my-blog-issue/tree/master/example/gulpConfigure)
+
+
+
 
