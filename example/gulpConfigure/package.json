@@ -1,0 +1,18 @@
+{
+  "name": "express-mall",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
