@@ -1,0 +1,62 @@
+@import "../style/default.scss";
+
+.#{$PrefixCls}-carousel{
+    display: block;
+    position: relative;  
+    width: 100%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+.#{$PrefixCls}-slider-frame{
+    display: block;
+    position: relative; 
+    margin: 0px; 
+    padding: 0px; 
+    height: auto; 
+    transform: translate3d(0px, 0px, 0px); 
+    box-sizing: border-box;
+    overflow: hidden; 
+    & > .slider-list{
+        display: block;
+        position: relative; 
+        margin: 0px; 
+        padding: 0px; 
+        height: 100%; 
+        width: 100%; 
+        transform: translate3d(0px, 0px, 0px);  
+        box-sizing: border-box;
+        & > .slider-slide{
+            position: absolute;
+            display: inline-block; 
+            margin: auto 0px;
+            list-style-type: none; 
+            width: auto; 
+            height: auto; 
+            box-sizing: border-box; 
+            vertical-align: top; 
+        }
+    }
+}
+
+.#{$PrefixCls}-slide-dots{
+    position: absolute; 
+    bottom: 2px;
+    right: 0;
+    left: 0;
+    padding: 0 6px;
+    text-align: center;
+    transform: translateZ(1px);
+    .dot{
+        display: inline-block;
+        margin: 0 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: hsla(0,0%,100%,.5);
+    }
+    .active{
+        width: 20px;
+        border-radius: $radius-md;
+        background: hsla(0,0%,100%,.8);
+    }
+}

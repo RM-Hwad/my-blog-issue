@@ -1,0 +1,46 @@
+$PrefixCls: c;  //库的前缀名称
+$hd: 1px; // 基本单位
+
+// 文字色
+$color-text-base: #333;                  // 基本
+$color-text-base-inverse: #fff;          // 基本 - 反色
+$color-text-placeholder: #bbb;           // 文本框提示
+
+// 边框色
+$border-color-base: #ddd;
+
+//背景颜色
+$fill-base: #fff; 
+$icon-base: #ccc;
+
+// 全局/品牌色
+$brand-primary: #108ee9;
+$brand-success: #6abf47;
+$brand-warning: #ffc600;
+$brand-error: #f4333c;
+$brand-important: #ff5b05;  // 用于小红点
+$brand-wait: #108ee9;
+
+// 字体尺寸
+$font-size-sm: 12 * $hd;
+$font-size-md: 14 * $hd;
+$font-size-lg: 16 * $hd;
+$font-size-caption: 16 * $hd;
+$font-size-heading: 17 * $hd;
+
+// 行高
+$line-height-base: 1;           // 单行行高
+$line-height-paragraph: 1.5;    // 多行行高
+
+// 圆角
+$radius-sm: 2 * $hd;
+$radius-md: 5 * $hd;
+$radius-lg: 7 * $hd;
+$radius-circle: 50%;
+
+//层级
+$mask-zindex: 100;
+$conter-zindex: 500;
+$page-zindex: 800;
+$modal-zindex: 900; 
+$toast-zindex: 1000;
