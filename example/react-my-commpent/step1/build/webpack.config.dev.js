@@ -25,6 +25,40 @@ module.exports = {
                 exclude: [
                     path.join(__dirname, '../node_modules')
                 ]
+            },
+            {
+                test: /\.(scss|sass)$/,
+                loader: 'style-loader!css-loader!sass-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    require.resolve('style-loader'),
+                    {
+                        loader: require.resolve('css-loader'),
+                        options: {
+                            importLoaders: 1,
+                        },
+                    },
+                    {
+                        loader: require.resolve('postcss-loader'),
+                        options: {
+                            ident: 'postcss',
+                            plugins: () => [
+                                require('postcss-flexbugs-fixes'),
+                                autoprefixer({
+                                    browsers: [
+                                        '>1%',
+                                        'last 4 versions',
+                                        'Firefox ESR',
+                                        'not ie < 9', // React doesn't support IE8 anyway
+                                    ],
+                                    flexbox: 'no-2009',
+                                }),
+                            ],
+                        }
+                    }
+                ]
             }
         ]
     },
