@@ -10,6 +10,9 @@
 
 > [react 组件库封装](https://github.com/ljcGitHub/my-blog-issue/issues/3)
 
+> [rem适配](https://github.com/ljcGitHub/my-blog-issue/issues/4)
+
+
 
 
 
