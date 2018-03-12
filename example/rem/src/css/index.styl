@@ -1,0 +1,59 @@
+@import "./px2rem.styl"
+body{
+    margin 0
+}
+.login-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    .login-bg{
+        width: 100%;
+        height: px2rem(234px);
+        background: url("../image/login_bg.png") no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+    .login-conter{
+        margin: 0 px2rem(20px);
+        margin-top: px2rem(-20px);
+        background-color: #fff;
+        border-radius: px2rem(10px);;
+        overflow: hidden;
+        box-shadow:0px px2rem(2px) px2rem(10px)  #BDBDBD;
+        box-sizing: border-box;
+        .login-title{
+            display: block;
+            margin: px2rem(15px) auto px2rem(10px) auto;
+            width: px2rem(100px);
+            line-height: px2rem(40px);
+            color: #000;
+            font-size: px2rem(14px);
+            text-align: center;
+        }
+        .login-litem{
+            position: relative;
+            padding: 0 px2rem(10px);
+            display: flex;
+            align-items: center;
+            height: px2rem(45px);
+            input{
+                color: #000;
+                font-size: px2rem(14px);
+                width: 100%;
+                padding: px2rem(2px) 0;
+                height: px2rem(26px);
+                border: 0;
+                background-color: transparent;
+                box-sizing: border-box;
+                -webkit-appearance : none ;
+            }
+        }
+        input::-webkit-input-placeholder { 
+            color: #bbb;
+        }
+    }
+}
